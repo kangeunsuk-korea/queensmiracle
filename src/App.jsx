@@ -34,12 +34,6 @@ export default function App() {
     } catch (err) { console.error(err); } finally { setIsTranslating(false); }
   };
 
-  const navigation = [
-    { id: "Dashboard", name: "종합 컨트롤타워", icon: <LayoutDashboard className="w-5 h-5" /> },
-    { id: "Voice", name: "AI 보이스 랩", icon: <Mic className="w-5 h-5" /> },
-    { id: "Ecosystem", name: "퀸즈 생태계", icon: <Globe className="w-5 h-5" /> },
-  ];
-
   return (
     <div className="min-h-screen bg-[#020617] flex font-sans text-slate-200 overflow-hidden">
       <aside className="w-72 bg-slate-950/95 border-r border-slate-800 flex flex-col p-8 shrink-0 z-50 shadow-2xl">
@@ -53,7 +47,11 @@ export default function App() {
             </div>
         </div>
         <nav className="flex-1 space-y-2.5">
-            {navigation.map((item) => (
+            {[
+              { id: "Dashboard", name: "종합 컨트롤타워", icon: <LayoutDashboard className="w-5 h-5" /> },
+              { id: "Voice", name: "AI 보이스 랩", icon: <Mic className="w-5 h-5" /> },
+              { id: "Ecosystem", name: "퀸즈 생태계", icon: <Globe className="w-5 h-5" /> },
+            ].map((item) => (
                 <button key={item.id} onClick={() => setActiveModule(item.id)} className={`w-full flex items-center gap-4 px-6 py-5 rounded-[1.5rem] transition-all group ${activeModule === item.id ? 'bg-indigo-600 text-white shadow-xl' : 'text-slate-500 hover:bg-slate-900/50'}`}>
                     {item.icon} <span className="text-sm font-black tracking-tight">{item.name}</span>
                 </button>
@@ -61,7 +59,7 @@ export default function App() {
         </nav>
         <div className="mt-auto p-5 bg-slate-900/40 rounded-3xl border border-slate-800/50 text-center">
             <div className="flex items-center justify-center gap-2 text-[10px] font-black text-emerald-500 uppercase tracking-widest">
-               <ShieldCheck className="w-4 h-4" /> Hub Active v25.5
+               <ShieldCheck className="w-4 h-4" /> Hub Active v28.0
             </div>
         </div>
       </aside>

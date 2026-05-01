@@ -28,7 +28,7 @@ export default function App() {
     try {
       const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`, {
           method: 'POST', headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ contents: [{ parts: [{ text: `Translate to English for Business: "${inputText}"` }] }] })
+          body: JSON.stringify({ contents: [{ parts: [{ text: `Translate to English: "${inputText}"` }] }] })
       });
       const data = await response.json();
       setTranslatedText(data.candidates?.[0]?.content?.parts?.[0]?.text || "결과를 가져오지 못했습니다.");
@@ -60,7 +60,7 @@ export default function App() {
         </nav>
         <div className="mt-auto p-5 bg-slate-900/40 rounded-3xl border border-slate-800/50 text-center">
             <div className="flex items-center justify-center gap-2 text-[10px] font-black text-emerald-500 uppercase tracking-widest">
-               <ShieldCheck className="w-4 h-4" /> Hub Active v23.3
+               <ShieldCheck className="w-4 h-4" /> Hub Active v23.6
             </div>
         </div>
       </aside>
@@ -111,6 +111,26 @@ export default function App() {
                 <span className="italic uppercase tracking-tighter">Execute AI</span>
             </button>
           </div>
+        )}
+        {activeModule === "Ecosystem" && (
+           <div className="space-y-12 animate-in fade-in duration-700">
+              <h3 className="text-5xl font-black text-white italic uppercase tracking-tighter mb-10 leading-none">Queens Miracle Ecosystem</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                 <div className="bg-slate-900/30 p-16 rounded-[5rem] border border-slate-800">
+                    <h5 className="text-2xl font-black text-indigo-400 mb-6 uppercase">Multi-Domain Integration</h5>
+                    <p className="text-slate-400 leading-relaxed text-lg">
+                       현재 보시는 <strong>queensmiracle.co.kr</strong>은 퀸즈미라클의 중앙 제어 타워입니다. <br/>
+                       여기서 버튼 하나로 아틀리에 도메인과 쇼핑몰 도메인을 넘나들며 비즈니스를 통합 관리할 수 있습니다. 
+                    </p>
+                 </div>
+                 <div className="bg-slate-900/30 p-16 rounded-[5rem] border border-slate-800">
+                    <h5 className="text-2xl font-black text-emerald-400 mb-6 uppercase">Scalable Architecture</h5>
+                    <p className="text-slate-400 leading-relaxed text-lg">
+                       Vercel과 GitHub 연동을 통해 앞으로 타로 앱, 음악 앱 등 무한한 독립 앱을 서브도메인으로 추가 연결하여 브랜드 제국을 확장할 수 있습니다.
+                    </p>
+                 </div>
+              </div>
+           </div>
         )}
         <footer className="mt-40 text-slate-800 text-[10px] font-black tracking-[1.5em] uppercase text-center flex flex-wrap justify-center items-center gap-16 pb-20 border-t border-slate-900 pt-32">
             <span>Queens Miracle Atelier HQ</span>

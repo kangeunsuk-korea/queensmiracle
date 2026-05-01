@@ -62,7 +62,7 @@ export default function App() {
         </nav>
         <div className="mt-auto p-5 bg-slate-900/40 rounded-3xl border border-slate-800/50 text-center">
             <div className="flex items-center justify-center gap-2 text-[10px] font-black text-emerald-500 uppercase tracking-widest">
-               <ShieldCheck className="w-4 h-4" /> Hub Active v29.0
+               <ShieldCheck className="w-4 h-4" /> Hub Active v30.0
             </div>
         </div>
       </aside>
@@ -80,19 +80,19 @@ export default function App() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                <a href="[https://queensmiracle.com](https://queensmiracle.com)" target="_blank" rel="noopener noreferrer" className="bg-slate-900/50 p-10 rounded-[4rem] border border-slate-800 shadow-2xl group hover:border-blue-500/50 transition-all hover:-translate-y-3">
                   <Globe2 className="w-10 h-10 text-blue-500 mb-8" />
-                  <h4 className="text-2xl font-black text-white italic mb-4 uppercase leading-none text-white">Atelier</h4>
+                  <h4 className="text-2xl font-black text-white italic mb-4 uppercase leading-none">Atelier</h4>
                   <p className="text-slate-500 text-sm mb-10 leading-relaxed">아틀리에 홈페이지 연결</p>
                   <div className="w-full py-4 rounded-2xl bg-blue-600/10 text-blue-400 font-black text-center group-hover:bg-blue-600 group-hover:text-white transition-all">Visit Website</div>
                </a>
                <a href="[https://queensmall.kr](https://queensmall.kr)" target="_blank" rel="noopener noreferrer" className="bg-slate-900/50 p-10 rounded-[4rem] border border-slate-800 shadow-2xl group hover:border-pink-500/50 transition-all hover:-translate-y-3">
                   <ShoppingCart className="w-10 h-10 text-pink-500 mb-8" />
-                  <h4 className="text-2xl font-black text-white italic mb-4 uppercase leading-none text-white">Queens Mall</h4>
+                  <h4 className="text-2xl font-black text-white italic mb-4 uppercase leading-none">Queens Mall</h4>
                   <p className="text-slate-500 text-sm mb-10 leading-relaxed">공식 스토어 연결</p>
                   <div className="w-full py-4 rounded-2xl bg-pink-600/10 text-pink-400 font-black text-center group-hover:bg-pink-600 group-hover:text-white transition-all">Shop Now</div>
                </a>
                <div onClick={() => setActiveModule("Voice")} className="bg-slate-900/50 p-10 rounded-[4rem] border border-slate-800 shadow-2xl group hover:border-indigo-500/50 transition-all hover:-translate-y-3 cursor-pointer">
                   <Mic className="w-10 h-10 text-indigo-500 mb-8" />
-                  <h4 className="text-2xl font-black text-white italic mb-4 uppercase leading-none text-white">AI BIZ Lab</h4>
+                  <h4 className="text-2xl font-black text-white italic mb-4 uppercase leading-none">AI BIZ Lab</h4>
                   <p className="text-slate-500 text-sm mb-10 leading-relaxed">통역 및 오디오북 생성</p>
                   <div className="w-full py-4 rounded-2xl bg-indigo-600 text-white font-black text-center">Launch Tool</div>
                </div>

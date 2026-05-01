@@ -12,6 +12,7 @@ export default function App() {
   const [translatedText, setTranslatedText] = useState("");
   const [isTranslating, setIsTranslating] = useState(false);
 
+  // Vercel 환경 변수 안전 접근 함수
   const getApiKey = () => {
     try {
       // @ts-ignore
@@ -37,7 +38,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#020617] flex font-sans text-slate-200 overflow-hidden">
-      <aside className="w-72 bg-slate-950/95 border-r border-slate-800 flex flex-col p-8 shrink-0 z-50">
+      <aside className="w-72 bg-slate-950/95 border-r border-slate-800 flex flex-col p-8 shrink-0 z-50 shadow-2xl">
         <div className="flex items-center gap-4 px-2 mb-16 group cursor-pointer" onClick={() => setActiveModule("Dashboard")}>
             <div className="bg-gradient-to-tr from-indigo-500 to-blue-600 p-3 rounded-2xl shadow-xl transition-transform group-hover:rotate-6">
                 <Zap className="w-8 h-8 text-white fill-white" />
@@ -60,7 +61,7 @@ export default function App() {
         </nav>
         <div className="mt-auto p-5 bg-slate-900/40 rounded-3xl border border-slate-800/50 text-center">
             <div className="flex items-center justify-center gap-2 text-[10px] font-black text-emerald-500 uppercase tracking-widest">
-               <ShieldCheck className="w-4 h-4" /> Hub Active v23.6
+               <ShieldCheck className="w-4 h-4" /> Hub Active v23.7
             </div>
         </div>
       </aside>
@@ -111,26 +112,6 @@ export default function App() {
                 <span className="italic uppercase tracking-tighter">Execute AI</span>
             </button>
           </div>
-        )}
-        {activeModule === "Ecosystem" && (
-           <div className="space-y-12 animate-in fade-in duration-700">
-              <h3 className="text-5xl font-black text-white italic uppercase tracking-tighter mb-10 leading-none">Queens Miracle Ecosystem</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                 <div className="bg-slate-900/30 p-16 rounded-[5rem] border border-slate-800">
-                    <h5 className="text-2xl font-black text-indigo-400 mb-6 uppercase">Multi-Domain Integration</h5>
-                    <p className="text-slate-400 leading-relaxed text-lg">
-                       현재 보시는 <strong>queensmiracle.co.kr</strong>은 퀸즈미라클의 중앙 제어 타워입니다. <br/>
-                       여기서 버튼 하나로 아틀리에 도메인과 쇼핑몰 도메인을 넘나들며 비즈니스를 통합 관리할 수 있습니다. 
-                    </p>
-                 </div>
-                 <div className="bg-slate-900/30 p-16 rounded-[5rem] border border-slate-800">
-                    <h5 className="text-2xl font-black text-emerald-400 mb-6 uppercase">Scalable Architecture</h5>
-                    <p className="text-slate-400 leading-relaxed text-lg">
-                       Vercel과 GitHub 연동을 통해 앞으로 타로 앱, 음악 앱 등 무한한 독립 앱을 서브도메인으로 추가 연결하여 브랜드 제국을 확장할 수 있습니다.
-                    </p>
-                 </div>
-              </div>
-           </div>
         )}
         <footer className="mt-40 text-slate-800 text-[10px] font-black tracking-[1.5em] uppercase text-center flex flex-wrap justify-center items-center gap-16 pb-20 border-t border-slate-900 pt-32">
             <span>Queens Miracle Atelier HQ</span>

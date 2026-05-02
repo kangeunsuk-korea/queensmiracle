@@ -130,6 +130,20 @@ export default function App() {
   쇼핑몰 보기
               </div>
             </div>
+              {/* AI 비즈랩 링크 */}
+<div
+  onClick={() => {
+    setActiveModule("Voice");
+  }}
+  className="text-left bg-slate-900/50 p-10 rounded-[4rem] border border-slate-800 shadow-2xl group hover:border-indigo-500/50 transition-all hover:-translate-y-3 cursor-pointer block"
+>
+  <Mic className="w-10 h-10 text-indigo-500 mb-8" />
+  <h4 className="text-2xl font-black text-white italic mb-4 uppercase leading-none">AI BIZ LAB</h4>
+  <p className="text-slate-500 text-sm mb-10 leading-relaxed">통역 및 오디오북 생성</p>
+  <div className="w-full py-4 rounded-2xl bg-indigo-600 text-white font-black text-center group-hover:bg-indigo-500 transition-all">
+    AI 보이스 랩 열기
+  </div>
+</div>
           </div>
         </div>
         )}

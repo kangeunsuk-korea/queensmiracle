@@ -61,8 +61,8 @@ export default function App() {
                 <Zap className="w-8 h-8 text-white fill-white" />
             </div>
             <div>
-                <h1 className="text-2xl font-black tracking-tighter uppercase italic leading-none text-white">Queens</h1>
-                <p className="text-[9px] font-black text-indigo-400 tracking-[0.5em] uppercase mt-1">Universal Hub</p>
+               <h1 className="text-xl font-black tracking-tighter leading-none text-white">퀸즈미라클</h1>
+               <p className="text-[10px] font-black text-indigo-400 tracking-[0.25em] mt-1">서비스</p>
             </div>
         </div>
 
@@ -81,7 +81,7 @@ export default function App() {
         {/* 사이드바 하단 정보 */}
         <div className="mt-auto p-5 bg-slate-900/40 rounded-3xl border border-slate-800/50 text-center">
             <div className="flex items-center justify-center gap-2 text-[10px] font-black text-emerald-500 uppercase tracking-widest">
-               <ShieldCheck className="w-4 h-4" /> Hub Active v46.0
+              <ShieldCheck className="w-4 h-4" /> 퀸즈미라클 서비스
             </div>
         </div>
       </aside>
@@ -94,17 +94,17 @@ export default function App() {
           <div className="space-y-16 animate-in fade-in duration-1000">
             <header className="space-y-8 text-center md:text-left">
               <div className="flex items-center gap-3 font-black text-indigo-400 uppercase tracking-[0.6em] text-[11px] justify-center md:justify-start">
-                <Activity className="w-4 h-4 animate-pulse" /> Global Controller Active
+               <Activity className="w-4 h-4 animate-pulse" /> 퀸즈미라클 서비스 실행중
               </div>
-              <h2 className="text-6xl md:text-8xl font-black text-white italic uppercase tracking-tighter leading-none">THE<br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500 uppercase italic">Queens Hub</span></h2>
-              <p className="text-slate-400 text-xl max-w-2xl font-medium leading-relaxed italic mx-auto md:mx-0">아틀리에, 몰, 비즈니스 자동화까지<br/>퀸즈미라클의 모든 세계가 이곳으로 연결됩니다.</p>
+             <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter leading-none">퀸즈미라클<br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">서비스</span></h2>
+             <p className="text-slate-400 text-xl max-w-2xl font-medium leading-relaxed mx-auto md:mx-0">홈페이지, 쇼핑몰, 타로앱, AI 서비스까지<br/>퀸즈미라클의 모든 서비스가 이곳에서 시작됩니다.</p>
             </header>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
            {/* 아틀리에 링크 */}
 <div
   onClick={() => {
-    window.location.assign("https://www.queensmiracle.com/");
+   setActiveModule("Ecosystem");
   }}
   className="text-left bg-slate-900/50 p-10 rounded-[4rem] border border-slate-800 shadow-2xl group hover:border-blue-500/50 transition-all hover:-translate-y-3 cursor-pointer block"
 >
@@ -112,14 +112,14 @@ export default function App() {
   <h4 className="text-2xl font-black text-white italic mb-4 uppercase leading-none">Atelier</h4>
   <p className="text-slate-500 text-sm mb-10 leading-relaxed">아틀리에 홈페이지 연결</p>
   <div className="w-full py-4 rounded-2xl bg-blue-600/10 text-blue-400 font-black text-center group-hover:bg-blue-600 group-hover:text-white transition-all">
-    Visit Website
+  홈페이지 보기
   </div>
 </div>
 
 {/* 퀸즈몰 링크 */}
 <div
   onClick={() => {
-    window.location.assign("https://www.queensmall.kr/");
+  setActiveModule("Ecosystem");
   }}
   className="text-left bg-slate-900/50 p-10 rounded-[4rem] border border-slate-800 shadow-2xl group hover:border-pink-500/50 transition-all hover:-translate-y-3 cursor-pointer block"
 >
@@ -127,7 +127,7 @@ export default function App() {
   <h4 className="text-2xl font-black text-white italic mb-4 uppercase leading-none">Queens Mall</h4>
   <p className="text-slate-500 text-sm mb-10 leading-relaxed">공식 스토어 연결</p>
   <div className="w-full py-4 rounded-2xl bg-pink-600/10 text-pink-400 font-black text-center group-hover:bg-pink-600 group-hover:text-white transition-all">
-    Shop Now
+  쇼핑몰 보기
   </div>
 </div>
 

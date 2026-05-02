@@ -62,7 +62,7 @@ export default function App() {
         </nav>
         <div className="mt-auto p-5 bg-slate-900/40 rounded-3xl border border-slate-800/50 text-center">
             <div className="flex items-center justify-center gap-2 text-[10px] font-black text-emerald-500 uppercase tracking-widest">
-               <ShieldCheck className="w-4 h-4" /> Hub Active v38.0
+               <ShieldCheck className="w-4 h-4" /> Hub Active v40.0
             </div>
         </div>
       </aside>

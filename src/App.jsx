@@ -128,7 +128,7 @@ export default function App() {
   <p className="text-slate-500 text-sm mb-10 leading-relaxed">공식 스토어 연결</p>
   <div className="w-full py-4 rounded-2xl bg-pink-600/10 text-pink-400 font-black text-center group-hover:bg-pink-600 group-hover:text-white transition-all">
   쇼핑몰 보기
-  </div>
+              </div>
             </div>
           </div>
         )}

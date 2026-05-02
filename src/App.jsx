@@ -102,10 +102,9 @@ export default function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {/* 아틀리에 링크 */}
-<button
-  type="button"
-  onClick={() => { window.location.href = "https://www.queensmiracle.com"; }}
-  className="text-left bg-slate-900/50 p-10 rounded-[4rem] border border-slate-800 shadow-2xl group hover:border-blue-500/50 transition-all hover:-translate-y-3"
+<a
+  href="https://www.queensmiracle.com/"
+  className="text-left bg-slate-900/50 p-10 rounded-[4rem] border border-slate-800 shadow-2xl group hover:border-blue-500/50 transition-all hover:-translate-y-3 cursor-pointer block"
 >
   <Globe2 className="w-10 h-10 text-blue-500 mb-8" />
   <h4 className="text-2xl font-black text-white italic mb-4 uppercase leading-none">Atelier</h4>
@@ -113,13 +112,12 @@ export default function App() {
   <div className="w-full py-4 rounded-2xl bg-blue-600/10 text-blue-400 font-black text-center group-hover:bg-blue-600 group-hover:text-white transition-all">
     Visit Website
   </div>
-</button>
+</a>
 
              {/* 퀸즈몰 링크 */}
-<button
-  type="button"
-  onClick={() => { window.location.href = "https://www.queensmall.kr"; }}
-  className="text-left bg-slate-900/50 p-10 rounded-[4rem] border border-slate-800 shadow-2xl group hover:border-pink-500/50 transition-all hover:-translate-y-3"
+<a
+  href="https://www.queensmall.kr/"
+  className="text-left bg-slate-900/50 p-10 rounded-[4rem] border border-slate-800 shadow-2xl group hover:border-pink-500/50 transition-all hover:-translate-y-3 cursor-pointer block"
 >
   <ShoppingCart className="w-10 h-10 text-pink-500 mb-8" />
   <h4 className="text-2xl font-black text-white italic mb-4 uppercase leading-none">Queens Mall</h4>
@@ -127,7 +125,7 @@ export default function App() {
   <div className="w-full py-4 rounded-2xl bg-pink-600/10 text-pink-400 font-black text-center group-hover:bg-pink-600 group-hover:text-white transition-all">
     Shop Now
   </div>
-</button>
+</a>
 
                {/* AI 랩 이동 버튼 - 내부 모듈 전환 */}
                <div 

@@ -129,7 +129,9 @@ export default function App() {
   <div className="w-full py-4 rounded-2xl bg-pink-600/10 text-pink-400 font-black text-center group-hover:bg-pink-600 group-hover:text-white transition-all">
   쇼핑몰 보기
   </div>
-</div>
+            </div>
+          </div>
+        )}
 
         {/* [B] AI 보이스 랩 (번역/통역 도구) */}
         {activeModule === "Voice" && (

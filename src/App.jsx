@@ -131,6 +131,7 @@ export default function App() {
               </div>
             </div>
           </div>
+        </div>
         )}
 
         {/* [B] AI 보이스 랩 (번역/통역 도구) */}

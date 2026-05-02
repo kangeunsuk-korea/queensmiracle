@@ -104,8 +104,8 @@ export default function App() {
               {/* 아틀리에 링크 */}
 <button
   type="button"
-  onClick={() => window.open("https://www.queensmiracle.com", "_blank", "noopener,noreferrer")}
-  className="text-left bg-slate-900/50 p-10 rounded-[4rem] border border-slate-800 shadow-2xl group hover:border-blue-500/50 transition-all hover:-translate-y-3 cursor-pointer block"
+  onClick={() => { window.location.href = "https://www.queensmiracle.com"; }}
+  className="text-left bg-slate-900/50 p-10 rounded-[4rem] border border-slate-800 shadow-2xl group hover:border-blue-500/50 transition-all hover:-translate-y-3"
 >
   <Globe2 className="w-10 h-10 text-blue-500 mb-8" />
   <h4 className="text-2xl font-black text-white italic mb-4 uppercase leading-none">Atelier</h4>
@@ -118,8 +118,8 @@ export default function App() {
              {/* 퀸즈몰 링크 */}
 <button
   type="button"
-  onClick={() => window.open("https://www.queensmall.kr", "_blank", "noopener,noreferrer")}
-  className="text-left bg-slate-900/50 p-10 rounded-[4rem] border border-slate-800 shadow-2xl group hover:border-pink-500/50 transition-all hover:-translate-y-3 cursor-pointer block"
+  onClick={() => { window.location.href = "https://www.queensmall.kr"; }}
+  className="text-left bg-slate-900/50 p-10 rounded-[4rem] border border-slate-800 shadow-2xl group hover:border-pink-500/50 transition-all hover:-translate-y-3"
 >
   <ShoppingCart className="w-10 h-10 text-pink-500 mb-8" />
   <h4 className="text-2xl font-black text-white italic mb-4 uppercase leading-none">Queens Mall</h4>

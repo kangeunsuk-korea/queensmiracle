@@ -119,7 +119,7 @@ export default function App() {
 {/* 퀸즈몰 링크 */}
 <div
   onClick={() => {
-  window.location.href = "https://queensmiracle68.cafe24.com";
+  window.location.href = "https://www.qmss.co.kr/";
   }}
   className="text-left bg-slate-900/50 p-10 rounded-[4rem] border border-slate-800 shadow-2xl group hover:border-pink-500/50 transition-all hover:-translate-y-3 cursor-pointer block"
 >
